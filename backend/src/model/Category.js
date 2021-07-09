@@ -5,13 +5,21 @@ const schema = new Schema({
         type: String,
         default: ''
     },
+    image: {
+        type: String,
+        default: ''
+    },
     description: {
         type: String,
         default: ''
     },
-    products: [{
+    color: {
+        type: String,
+        default: '#ffffff'
+    },
+    types: [{
         type: ObjectId,
-        ref: 'Product'
+        ref: 'Type'
     }]
 })
 

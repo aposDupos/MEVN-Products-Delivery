@@ -1,0 +1,91 @@
+@import "../colors";
+
+.header {
+  padding-top: 32px;
+
+  &-container {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+      order: -1;
+    }
+
+    &__img {
+      img {
+        width: 31px;
+        @media screen and (max-width: 360px) {
+          width: 15px;
+        }
+      }
+    }
+
+    &__text {
+      font-weight: 600;
+      margin-left: 12px;
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 28px;
+      }
+    }
+  }
+
+
+  &-buttons {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-seacrh {
+    &-container {
+
+    }
+  }
+
+  &-cart {
+    position: relative;
+
+    .round {
+      color: #FFFFFF;
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+      background: $red;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-sidebar {
+    &__button {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      @media screen and (max-width: 600px) {
+        order: -1;
+      }
+    }
+  }
+}
+
+.vs-button__content {
+  padding: 0;
+}
+
+.round {
+
+}

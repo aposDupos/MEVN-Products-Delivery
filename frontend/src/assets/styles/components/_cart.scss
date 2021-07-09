@@ -1,0 +1,157 @@
+@import "../colors";
+
+.cart {
+  &-counter {
+    position: absolute;
+    margin: 0 auto;
+    bottom:0;
+    right:0;
+    background: $violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 128px;
+    @media screen and (max-width: 768px) {
+      position: unset;
+      margin-top: 16px;
+    }
+
+    &__number {
+      &-label {
+        //width: 100%;
+      }
+
+      input {
+        text-align: center;
+        color: white;
+        background: $violet;
+        border: 0;
+        max-width: 32px;
+      }
+
+      //margin: 0 8px;
+    }
+  }
+
+  &-header {
+    width: 100%;
+    margin-top: 64px;
+
+    &__heading {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &__hr {
+      border: 0;
+      border-bottom: 2px solid #000000;
+      margin-bottom: 48px;
+    }
+  }
+
+  &-items {
+    //display: flex;
+    //flex-direction: column;
+    //flex-wrap: wrap;
+
+
+  }
+
+  &-container {
+    width: 100%;
+    gap: 32px;
+    display: grid;
+    @media screen and (max-width: 560px) {
+      width: unset;
+      margin: 0 auto;
+
+    }
+    &-item{
+      padding: 16px;
+      background: $card-background;
+    }
+  }
+
+  &-item {
+
+    display: flex;
+    position: relative;
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__buttons {
+      position: absolute;
+      z-index: 100;
+      //right: 16px;
+      //top: 16px;
+      right: 0;
+      top: 0;
+      display: flex;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    &__image {
+      position: relative;
+
+      &:hover &-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &-more {
+        display: none;
+        position: absolute;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-heading {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        //max-width: calc(100% - 100px;
+      }
+
+      &-weight {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: left;
+        color: $light-grey;
+      }
+
+      &-price {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+      }
+
+      @media screen and (max-width: 768px) {
+        //margin-right: 60px;
+        &-heading {
+          font-size: 16px;
+        }
+        &-weight {
+          font-size: 14px;
+        }
+        &-price {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

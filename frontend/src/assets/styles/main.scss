@@ -1,0 +1,106 @@
+@use "fonts";
+@use "colors";
+@use "components/header";
+@use "components/categories";
+@use "components/card";
+@use "components/cart";
+@use "components/info-page";
+*, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.vs-input {
+  min-height: 54px;
+}
+
+i.bx, i.bx:before {
+  font-size: 1.5rem;
+}
+
+.bx-cart, .bxs-cart {
+  color: #FFFFFF;
+}
+
+.btn {
+  min-width: 92px;
+  min-height: 54px;
+
+  &__icon {
+    min-width: 54px;
+    min-height: 54px
+  }
+
+  &__social {
+    min-width: 48px;
+    min-height: 48px;
+
+    i, i:before {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.br-16 {
+  border-radius: 16px;
+}
+
+.br-32 {
+  border-radius: 32px;
+}
+.br-0{
+  border-radius: 32px 0 0 32px;
+}
+.button {
+
+}
+
+.main-mt {
+  margin-top: 64px;
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-top: 40px;
+  }
+}
+
+.vs-pagination {
+  &__button, &__dotted, &__arrow, &__active {
+    width: 54px;
+    height: 54px;
+    @media screen and (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 48px;
+  &__button {
+    display: flex;
+    justify-content: center;
+    &__item{
+      color: #000000;
+      background: transparent;
+    }
+    margin: 0 auto;
+
+  }
+  &__pages {
+    margin-top: 48px;
+    @media screen and (max-width: 360px) {
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --vs-radius: 16px;
+}
+
+.card {
+  width: 356px;
+  background: #FFFFFF;
+}
+.card-header {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=card.css.map */

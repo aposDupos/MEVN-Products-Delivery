@@ -23,11 +23,11 @@ const schema = new Schema({
     },
     image: {
         type: String,
-        default: ''
+        default: ""
     },
-    category: {
+    type: {
         type: ObjectId,
-        ref: 'Category'
+        ref: 'Type'
     }
 })
 

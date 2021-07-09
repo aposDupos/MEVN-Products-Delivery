@@ -1,11 +1,9 @@
 import {request} from "./generic.service";
 
-const getProduct = async (id) => await request({url: `products/${id}`, method: 'get'})
-const getProducts = async () => await request({url: `products`, method: 'get'})
-{
+const getCategory = async (id) => await request({url: `categories/${id}`, method: 'get'})
+const getCategories = async () => await request({url: `categories`, method: 'get'})
 
-}
 export {
-    getProduct,
-    getProducts
+    getCategory,
+    getCategories
 }

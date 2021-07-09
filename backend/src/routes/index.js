@@ -1,4 +1,10 @@
 module.exports = {
-    routes: ["products", "categories",
+    routes: [
+        "products",
+        "categories",
+        "types",
+        "streets",
+        "cities",
+        "testimonials",
     ]
 }
