@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'A';
+  src: url('../fonts/A Bold.eot');
+  src: url('../fonts/A Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/A Bold.woff2') format('woff2'),
+  url('../fonts/A Bold.woff') format('woff'),
+  url('../fonts/A Bold.svg#A Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04EF;
+}
+
+@font-face {
+  font-family: 'A';
+  src: url('../fonts/A Light.eot');
+  src: url('../fonts/A Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/A Light.woff2') format('woff2'),
+  url('../fonts/A Light.woff') format('woff'),
+  url('../fonts/A Light.svg#A Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04EF;
+}
+
+@font-face {
+  font-family: 'A';
+  src: url('../fonts/A Medium.eot');
+  src: url('../fonts/A Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/A Medium.woff2') format('woff2'),
+  url('../fonts/A Medium.woff') format('woff'),
+  url('../fonts/A Medium.svg#A Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04EF;
+}
+
+@font-face {
+  font-family: 'A';
+  src: url('../fonts/A Regular.eot');
+  src: url('../fonts/A Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/A Regular.woff2') format('woff2'),
+  url('../fonts/A Regular.woff') format('woff'),
+  url('../fonts/A Regular.svg#A Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04EF;
+}
+
+@font-face {
+  font-family: 'A';
+  src: url('../fonts/A SemiBold.eot');
+  src: url('../fonts/A SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/A SemiBold.woff2') format('woff2'),
+  url('../fonts/A SemiBold.woff') format('woff'),
+  url('../fonts/A SemiBold.svg#A SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04EF;
+}
+
+*, html, body {
+  font-family: 'A', sans-serif;
+}
+h1, h2, h3, a,span, p, input, caption{
+  color: black;
+}
+
+h1 {
+  //styleName: H1;
+  //styleName: H1;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @media screen and (max-width: 360px) {
+    //styleName: H1 mob;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+h2 {
+  //styleName: H2;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 360px) {
+    //styleName: H2 mob;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+h3 {
+  //styleName: H3;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 360px) {
+    //styleName: H3 mob;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+button, .button, .vs-sidebar__item__text-tooltip, .vs-sidebar__item__text {
+  //styleName: Button;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 360px) {
+    //styleName: Button mob;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+p, div, a {
+  //styleName: Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 360px) {
+    //styleName: Text mob;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+span, small {
+  //styleName: Caption;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 360px) {
+    //styleName: Caption mob;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.card-content__description{
+  //styleName: Caption mob;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+input, ::placeholder{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+label{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}

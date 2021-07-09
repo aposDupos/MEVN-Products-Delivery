@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aposDupos/MEVN-Products-Delivery.git"
+  },
+  "author": "Tyrtychnyy V. A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aposDupos/MEVN-Products-Delivery/issues"
+  },
+  "homepage": "https://github.com/aposDupos/MEVN-Products-Delivery#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "mongoose": "^5.12.12",
+    "qs": "^6.10.1",
+    "ramda": "^0.27.1"
+  }
+}
